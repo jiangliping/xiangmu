@@ -1,0 +1,546 @@
+@import "./reset.scss";
+@import "./style.scss";
+// 开发pc时请使用 pcStyle.scss 开发移动站点时请使用index.scss
+
+// 移动端
+// font_dpr rem
+
+// pc端
+// font_fn bg_fn
+
+//start
+.app{
+  background: #26c2fd;
+  height: rem(4120);
+  width: rem(640);
+  margin: 0 auto;
+  overflow: hidden;
+  .app_header{
+    .app_header_con{
+      .app_header_con_top{
+        height: rem(904);
+        background: url("../img/M618_01.png") no-repeat center / cover;
+        position: relative;
+        .app_header_con_top_qiqiu{
+          position: absolute;
+          width: rem(185);
+          height: rem(467);
+          top: rem(103);
+          left: rem(10);
+          animation-iteration-count: infinite;
+          .app_header_con_top_qiqiu_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_qiqiu_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/asadfds234dfsdf.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_ren{
+          position: absolute;
+          width: rem(504);
+          height: rem(661);
+          top: rem(37);
+          left: rem(70);
+          .app_header_con_top_ren_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_ren_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/fsdfsdf.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_logo{
+          position: absolute;
+          width: rem(221);
+          height: rem(174);
+          top: rem(44);
+          right: rem(20);
+          animation-iteration-count: infinite;
+          .app_header_con_top_logo_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_logo_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/adfaf.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_text{
+          position: absolute;
+          width: rem(201);
+          height: rem(86);
+          top: rem(630);
+          left: rem(190);
+          z-index: 1;
+          animation-iteration-count: infinite;
+          .app_header_con_top_text_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_text_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/TYC-COSMETIC-SURGERY.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_one1{
+          position: absolute;
+          width: rem(156);
+          height: rem(167);
+          top: rem(693);
+          left: rem(31);
+          animation-iteration-count: infinite;
+          .app_header_con_top_one1_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_one1_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/one-1.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_one2{
+          position: absolute;
+          width: rem(155);
+          height: rem(167);
+          top: rem(698);
+          left: rem(172);
+          animation-iteration-count: infinite;
+          .app_header_con_top_one2_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_one2_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/one-2.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_one3{
+          position: absolute;
+          width: rem(156);
+          height: rem(166);
+          top: rem(673);
+          left: rem(312);
+          animation-iteration-count: infinite;
+          .app_header_con_top_one3_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_one3_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/one-3.png") no-repeat center / cover;
+            }
+          }
+        }
+        .app_header_con_top_one4{
+          position: absolute;
+          width: rem(155);
+          height: rem(166);
+          top: rem(680);
+          left: rem(452);
+          animation-iteration-count: infinite;
+          .app_header_con_top_one4_con{
+            width: 100%;
+            height: 100%;
+            .app_header_con_top_one4_con_img{
+              width: 100%;
+              height: 100%;
+              background: url("../img/one-4.png") no-repeat center / cover;
+            }
+          }
+        }
+      }
+      .app_header_con_middle{
+        padding-top: rem(15);
+        padding-bottom: rem(20);
+        &.huang{
+          background: #ffef15;
+        }
+        .app_header_con_middle_title{
+          position: relative;
+          border: rem(8) solid #013e7d;
+          border-radius: rem(40);
+          animation-iteration-count: infinite;
+          &.lan{
+            background: #fff;
+          }
+          .app_header_con_middle_title_text{
+            display: flex;
+            justify-content: center;
+            padding: rem(10) 0;
+            .app_header_con_middle_title_text_li{
+              @include font_small_head();
+              padding: 0 rem(30);
+              line-height: rem(18);
+              color: rgba(1,62,165,.5);
+              &.middle{
+                border-left: rem(1) solid #bdbdbd;
+                border-right: rem(1) solid #bdbdbd;
+              }
+              &.one{
+                color: #013e7d;
+              }
+            }
+          }
+          .app_header_con_middle_titleleft{
+            position: absolute;
+            width: rem(25);
+            height: rem(51);
+            top: rem(25);
+            left: rem(10);
+            background: url("../img/right_xian.png") no-repeat center / cover;
+          }
+          .app_header_con_middle_titleright{
+            position: absolute;
+            width: rem(25);
+            height: rem(51);
+            top: rem(25);
+            right: rem(10);
+            background: url("../img/left_xian.png") no-repeat center / cover;
+          }
+        }
+        .app_header_con_middle_con{
+          padding-top: rem(22);
+          position: relative;
+          .app_header_con_middle_con_textimg1{
+            animation-iteration-count: infinite;
+            position: absolute;
+            width: rem(289);
+            height: rem(129);
+            top: rem(60);
+            left: rem(17);
+            z-index: 10;
+            background: url("../img/sdf3s.png") no-repeat center / cover;
+          }
+          .app_header_con_middle_con_textimg2{
+            animation-iteration-count: infinite;
+            position: absolute;
+            width: rem(324);
+            height: rem(117);
+            top: rem(45);
+            left: rem(15);
+            z-index: 10;
+            background: url("../img/sdf3s3.png") no-repeat center / cover;
+          }
+          .app_header_con_middle_con_textimg3{
+            animation-iteration-count: infinite;
+            position: absolute;
+            width: rem(299);
+            height: rem(85);
+            top: rem(60);
+            left: rem(10);
+            z-index: 10;
+            background: url("../img/sdf3s2.png") no-repeat center / cover;
+          }
+          .app_header_con_middle_con_box{
+            background: #fefc0b;
+            padding: rem(10) rem(10) 0;
+            width: rem(580);
+            height: rem(1388);
+            margin: 0 auto;
+            border: rem(8) solid #013e7d;
+            border-radius: rem(20);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &.huang{
+              height: rem(690);
+              background: #26c2fd;
+            }
+            &.lan{
+              height: rem(690);
+              background: #ffef15;
+            }
+            .app_header_con_middle_con_box_left{
+              border: rem(8) solid #013e7d;
+              border-radius: rem(20);
+              width: rem(270);
+              height: rem(668);
+              background: #fff url("../img/C.png") no-repeat;
+              background-position: center rem(71);
+              background-size: rem(345) rem(372);
+              .app_header_con_middle_con_box_left_text{
+                float: right;
+                margin-right: rem(10);
+                margin-top: rem(480);
+                animation-iteration-count: infinite;
+                @include font_main_head();
+                .app_header_con_middle_con_box_left_text_span{
+                  font-size: rem(48);
+                }
+              }
+              .app_header_con_middle_con_box_left_bxg{
+                float: right;
+                margin-right: rem(10);
+                margin-top: rem(-16);
+                @include font_sub_head();
+              }
+              .app_header_con_middle_con_box_left_button{
+                animation-iteration-count: infinite;
+                clear: both;
+                float: right;
+                margin-right: rem(60);
+                margin-top: rem(30);
+                width: rem(140);
+                height: rem(40);
+                border: rem(5) solid #013e7d;
+                border-radius: rem(60);
+                background: #00e47e;
+                @include font_link_text();
+                text-align: center;
+              }
+            }
+            .app_header_con_middle_con_box_right{
+              width: rem(285);
+              height: rem(684);
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              .app_header_con_middle_con_box_right_top{
+                height: rem(322);
+                border: rem(8) solid #013e7d;
+                border-radius: rem(20);
+                overflow: hidden;
+                background: #fff url("../img/627e39a2957e9d1bb2ce59073b24577d5b9be5ecbfce2-R3tloz_fw658-(1).png") no-repeat;
+                background-position: center rem(-13);
+                background-size: rem(235) auto;
+                .app_header_con_middle_con_box_right_top_bxg{
+                  background: #fff;
+                  padding: rem(8) 0;
+                  border-bottom: rem(1) solid #ccc;
+                  text-align: center;
+                  @include font_sub_head();
+                  font-size: rem(25);
+                  margin-top: rem(202);
+                }
+                .app_header_con_middle_con_box_right_top_box{
+                  background: #fff;
+                  display: flex;
+                  padding: rem(8) 0;
+                  justify-content: center;
+                  align-items: center;
+                  .app_header_con_middle_con_box_right_top_box_left{
+                    @include font_main_head();
+                    font-size: rem(48);
+                    line-height: rem(48);
+                    border-right: rem(1) solid #ccc;
+                    padding: 0 rem(15);
+                    animation-iteration-count: infinite;
+                  }
+                  .app_header_con_middle_con_box_right_top_box_right{
+                    padding: 0 rem(15);
+                    .app_header_con_middle_con_box_right_top_box_right_button{
+                      width: rem(140);
+                      height: rem(40);
+                      border: rem(5) solid #013e7d;
+                      border-radius: rem(60);
+                      background: #00e47e;
+                      @include font_link_text();
+                      text-align: center;
+                      animation-iteration-count: infinite;
+                    }
+                  }
+                }
+              }
+              .app_header_con_middle_con_box_right_bottom{
+                height: rem(322);
+                border: rem(8) solid #013e7d;
+                border-radius: rem(20);
+                overflow: hidden;
+                background: #fff url("../img/85c8617aefa79238e4b9141bd88a845914cbd418cdbe8-kgiLKg_fw658.png") no-repeat;
+                background-position: center rem(10);
+                background-size: rem(235) auto;
+                .app_header_con_middle_con_box_right_bottom_bxg{
+                  background: #fff;
+                  padding: rem(8) 0;
+                  border-bottom: rem(1) solid #ccc;
+                  text-align: center;
+                  @include font_sub_head();
+                  font-size: rem(25);
+                  margin-top: rem(202);
+                }
+                .app_header_con_middle_con_box_right_bottom_box{
+                  background: #fff;
+                  display: flex;
+                  padding: rem(8) 0;
+                  justify-content: center;
+                  align-items: center;
+                  .app_header_con_middle_con_box_right_bottom_box_left{
+                    @include font_main_head();
+                    font-size: rem(48);
+                    line-height: rem(48);
+                    border-right: rem(1) solid #ccc;
+                    padding: 0 rem(15);
+                    animation-iteration-count: infinite;
+                  }
+                  .app_header_con_middle_con_box_right_bottom_box_right{
+                    padding: 0 rem(15);
+                    .app_header_con_middle_con_box_right_bottom_box_right_button{
+                      width: rem(140);
+                      height: rem(40);
+                      border: rem(5) solid #013e7d;
+                      border-radius: rem(60);
+                      background: #00e47e;
+                      @include font_link_text();
+                      text-align: center;
+                      animation-iteration-count: infinite;
+                    }
+                  }
+                }
+              }
+            }
+            .app_header_con_middle_con_boxtop_left{
+              .app_header_con_middle_con_boxtop_left_top{
+                width: rem(270);
+                height: rem(322);
+                border: rem(8) solid #013e7d;
+                border-radius: rem(20);
+                overflow: hidden;
+                background: #fff url("../img/627e39a2957e9d1bb2ce59073b24577d5b9be5ecbfce2-R3tloz_fw658-(1).png") no-repeat;
+                background-position: center rem(-13);
+                background-size: rem(235) auto;
+                &.wu{
+                  background: #fff url("../img/aasd2xf.png") no-repeat;
+                  background-position: center rem(13);
+                  background-size: rem(185) auto;
+                }
+                &.mz{
+                  background: #fff url("../img/sdf243sdf.png") no-repeat;
+                  background-position: center rem(13);
+                  background-size: rem(120) auto;
+                }
+                &.hw{
+                  background: #fff url("../img/sdf3d.png") no-repeat;
+                  background-position: center rem(23);
+                  background-size: rem(180) auto;
+                }
+                &.dsff{
+                  background: #fff url("../img/sdf234sdf.png") no-repeat;
+                  background-position: center rem(0);
+                  background-size: rem(205) auto;
+                }
+                &.mn{
+                  background: #fff url("../img/85c8617aefa79238e4b9141bd88a845914cbd418cdbe8-kgiLKg_fw658.png") no-repeat;
+                  background-position: center rem(10);
+                  background-size: rem(195) auto;
+                }
+                &.mn1{
+                  background: #fff url("../img/df234sdfds.png") no-repeat;
+                  background-position: center rem(-40);
+                  background-size: rem(275) auto;
+                }
+                &.rby{
+                  background: #fff url("../img/sdfsdf23sdfsdf.png") no-repeat;
+                  background-position: center rem(2);
+                  background-size: rem(295) auto;
+                }
+                &.huang{
+                  .huang_con{
+                    background: #fff;
+                    padding-bottom: rem(10);
+                    margin-top: rem(212);
+                    .huang_con_bxg{
+                      text-align: center;
+                      animation-iteration-count: infinite;
+                      @include font_main_head();
+                      font-size: rem(25);
+                      .huang_con_bxg_span{
+                        font-size: rem(48);
+                        line-height: rem(48);
+                      }
+                    }
+                    .huang_con_button{
+                      margin: 0 auto;
+                      width: rem(140);
+                      height: rem(40);
+                      border: rem(5) solid #013e7d;
+                      border-radius: rem(60);
+                      background: #00e47e;
+                      @include font_link_text();
+                      text-align: center;
+                      animation-iteration-count: infinite;
+                    }
+                  }
+                }
+                .app_header_con_middle_con_boxtop_left_top_bxg{
+                  background: #fff;
+                  padding: rem(8) 0;
+                  border-bottom: rem(1) solid #ccc;
+                  text-align: center;
+                  @include font_sub_head();
+                  font-size: rem(25);
+                  margin-top: rem(202);
+                  &.shuang{
+                    line-height: rem(30);
+                    margin-top: rem(180);
+                  }
+                  &.san{
+                    font-size: rem(20);
+                    line-height: rem(22);
+                    margin-top: rem(176);
+                  }
+                }
+                .app_header_con_middle_con_boxtop_left_top_box{
+                  background: #fff;
+                  display: flex;
+                  padding: rem(8) 0;
+                  justify-content: center;
+                  align-items: center;
+                  .app_header_con_middle_con_boxtop_left_top_box_left{
+                    @include font_main_head();
+                    font-size: rem(48);
+                    line-height: rem(48);
+                    border-right: rem(1) solid #ccc;
+                    padding: 0 rem(15);
+                    animation-iteration-count: infinite;
+
+                    &.jq{
+                      @include font_main_head();
+                      border-right: rem(1) solid #ccc;
+                      padding: 0 rem(15);
+                      text-align: center;
+                      width: rem(70);
+                      font-size: rem(16);
+                      line-height: rem(20);
+                    }
+                    .app_header_con_middle_con_boxtop_left_top_box_left_span{
+                      font-size: rem(25);
+                    }
+                  }
+                  .app_header_con_middle_con_boxtop_left_top_box_right{
+                    padding: 0 rem(15);
+                    .app_header_con_middle_con_boxtop_left_top_box_right_button{
+                      width: rem(140);
+                      height: rem(40);
+                      border: rem(5) solid #013e7d;
+                      border-radius: rem(60);
+                      background: #00e47e;
+                      @include font_link_text();
+                      text-align: center;
+                      animation-iteration-count: infinite;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .dt{
+        height: rem(20);
+        background: #fff url("../img/ffdsf234dsfsdf_02.png") no-repeat center / cover;
+        &.one{
+          background: #fff url("../img/werwer_02.png") no-repeat center / cover;
+        }
+      }
+    }
+  }
+}

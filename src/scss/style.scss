@@ -1,0 +1,97 @@
+//阿里图标库
+// @font-face {
+//   font-family: 'iconfontyyy';  /* project id 284616 */
+//   src: url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.eot');
+//   src: url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.eot?#iefix') format('embedded-opentype'),
+//   url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.woff') format('woff'),
+//   url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.ttf') format('truetype'),
+//   url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.svg#iconfont') format('svg');
+// }
+
+// .iconfontyyy{
+//     font-family:"iconfontyyy" !important;
+//     font_size:3.5em;font-style:normal;
+//     -webkit-font-smoothing: antialiased;
+//     -webkit-text-stroke-width: 0.01em;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+
+//gb-width
+$gb_width: 640;    //640是设计图(画布)的宽度，可根据需要调整
+
+//px ====> rem
+@function rem($size) {
+   @return $size/$gb_width*10rem;
+}
+
+//编写一个font_size宏
+@mixin font_dpr($font_size) {
+  @if $font_size <= 30 {
+    font-size: $font_size + px;
+    [data-dpr="2"] & {
+        font-size: $font_size * 2px;
+    }
+    //物理像素/逻辑像素=dpr
+    [data-dpr="3"] & {
+        font-size: $font_size * 3px;
+    }
+
+    [data-dpr="3.5"] & {
+        font-size: $font_size * 3.5px;
+    }
+  } @else {
+    font-size: $font_size/$gb_width*10rem;
+  }
+}
+
+//字体使用规范
+//字体通用方法
+@mixin font_fn( $size : rem(12), $color : #fff, $bold : narmal ){
+  font-size: $size;
+  font-weight: $bold;
+  color: $color;
+  line-height: 1.5;
+}
+
+@mixin bg_fn( $url, $repeat, $position, $size ){
+  background-image: $url;
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+
+//主标题
+@mixin font_main_head(){  //+
+  @include font_fn(rem(30), #fe33cb);
+}
+
+//次级标题
+@mixin font_sub_head(){  //+
+  @include font_fn(rem(30), #013e7d);
+}
+
+//小标题
+@mixin font_small_head(){ //+
+  @include font_fn(rem(18), #a3b0c4);
+}
+
+//正文
+@mixin font_text(){
+  @include font_fn(rem(18), #fff);
+}
+
+//辅助文字
+@mixin font_help_text(){
+  @include font_fn(rem(12), #999);
+}
+
+//失效文字
+@mixin font_disabled_text(){
+  @include font_fn(rem(12), #ccc);
+}
+
+//链接文字
+@mixin font_link_text(){  //+
+  @include font_fn(rem(24), #fff);
+}
